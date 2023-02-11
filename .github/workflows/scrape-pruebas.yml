@@ -5,9 +5,9 @@ name: Node.js Package
 
 on:
   workflow_dispatch:
-    
+
   schedule:
-    - cron: "0,30 * * * *"
+    - cron: '0,30 * * * *'
 
 jobs:
   build:
@@ -19,6 +19,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.18.2
+          run_install: true
       - run: |
           node index.js
           git add -A
