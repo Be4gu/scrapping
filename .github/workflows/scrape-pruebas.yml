@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '0,30 * * * *'
+    - cron: '0,12,14,15,30 * * * *'
 
 jobs:
   build:
@@ -25,3 +25,6 @@ jobs:
           git config --global user.name "Cristi"
       - run: |
           node index.js
+          git add -A
+          git commit -m "[bot] Update Robada"
+          git push origin main
