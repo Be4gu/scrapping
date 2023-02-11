@@ -25,6 +25,3 @@ jobs:
           git config --global user.name "Cristi
       - run: |
           node index.js
-          git add -A
-          git commit -m "[bot] Update Robada"
-          git push origin main
