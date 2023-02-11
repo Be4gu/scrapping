@@ -19,8 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install package
-        run: npm install
+      - run: npm install
       - run: |
           node index.js
           git add -A
