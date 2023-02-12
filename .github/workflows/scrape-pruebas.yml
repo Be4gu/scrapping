@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '00,30 * * * *'
+    - cron: '00,10,30 * * * *'
 jobs:
   build:
     runs-on: ubuntu-22.04
