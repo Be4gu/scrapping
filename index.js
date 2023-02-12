@@ -1,10 +1,25 @@
 import * as cheerio from 'cheerio'
+import { writeFile } from 'node:fs/promises'
+import path from 'node:path'
 
-const res = await fetch(
-  'https://www.vlr.gg/164485/nom-esports-vs-b8-esports-challengers-league-east-surge-split-1-w6'
-)
-const text = await res.text()
+const URLS = {
+  matches: 'https://www.vlr.gg/matches',
+}
 
-const $ = cheerio.load(text)
-const card = $('span.match-header-vs-note')
-console.log($(card).html())
+async function scrape(url) {
+  const res = await fetch(url)
+  const text = await res.text()
+  return cheerio.load(text)
+}
+
+const $ = await scrape(URLS.matches)
+let times = []
+$('div.ml-eta').each((index, el) => {
+  times.push({ item: $(el).text() })
+})
+
+const filePath = path.join(process.cwd(), './db/times.json')
+
+await writeFile(filePath, JSON.stringify(times, null, 2), 'utf-8')
+
+console.log(filePath)
