@@ -20,5 +20,6 @@ jobs:
       - run: |
           node index.js
           git config user.name Be4gu
+          git config user.email Be4gu@gmail.com
           git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update times database"
           git push origin main
