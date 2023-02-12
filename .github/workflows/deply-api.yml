@@ -6,6 +6,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    timeout-minutes: 5
     name: Deploy API to Cloudflare Workers
     steps:
       - uses: actions/checkout@v3
