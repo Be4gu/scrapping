@@ -1,6 +1,14 @@
 name: Deploy
 
-on: [push]
+on:
+  push: {}
+  
+  workflow_run:
+    types:
+      - completed
+    branches: [main]
+    workflows: 
+    - Deploy scraping app
 
 jobs:
   deploy:
