@@ -5,7 +5,7 @@ import path from 'node:path'
 const URLS = {
   matches: 'https://www.vlr.gg/matches',
 }
-
+//Comentario para detectar un cambio en el commit
 async function scrape(url) {
   const res = await fetch(url)
   const text = await res.text()
