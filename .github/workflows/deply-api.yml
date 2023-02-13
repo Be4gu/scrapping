@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - main
+      
+  workflow_run:
+    types:
+      - completed
+    branches: [main]
+    workflows: 
+    - Deploy scraping app
 
 jobs:
   deploy:
