@@ -17,12 +17,9 @@ jobs:
         with:
           node-version: 18
       - run: npm install
-
-      - run: |
-          git config --global user.email "Cristi"
-          git config --global user.name "Cristi"
       - run: |
           node index.js
-          git add -A
-          git commit -m "[BOT] base de datos actualizada"
-          git push
+          git config user.name Be4gu
+          git config user.email Be4gu@gmail.com
+          git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update times database"
+          git push origin main
