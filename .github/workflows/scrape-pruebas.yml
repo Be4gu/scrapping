@@ -20,7 +20,7 @@ jobs:
 
       - run: |
           git config --global user.email "Cristi"
-          git config --global user.name "Cristi
+          git config --global user.name "Cristi"
       - run: |
           node index.js
           git add -A
