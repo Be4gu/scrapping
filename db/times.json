@@ -1,12 +1,9 @@
 [
   {
-    "item": "30m"
+    "item": "14h 1m"
   },
   {
-    "item": "14h 45m"
-  },
-  {
-    "item": "17h 45m"
+    "item": "17h 1m"
   },
   {
     "item": "1d 14h"
@@ -63,7 +60,7 @@
     "item": "4d 4h"
   },
   {
-    "item": "4d 5h"
+    "item": "4d 4h"
   },
   {
     "item": "4d 5h"
@@ -75,7 +72,7 @@
     "item": "4d 6h"
   },
   {
-    "item": "4d 7h"
+    "item": "4d 6h"
   },
   {
     "item": "4d 7h"
@@ -96,7 +93,7 @@
     "item": "4d 9h"
   },
   {
-    "item": "4d 10h"
+    "item": "4d 9h"
   },
   {
     "item": "4d 10h"
@@ -111,13 +108,16 @@
     "item": "4d 17h"
   },
   {
-    "item": "5d 2h"
+    "item": "5d 1h"
   },
   {
     "item": "5d 2h"
   },
   {
     "item": "5d 2h"
+  },
+  {
+    "item": "5d 3h"
   },
   {
     "item": "5d 4h"
@@ -129,6 +129,6 @@
     "item": "5d 5h"
   },
   {
-    "item": "5d 5h"
+    "item": "5d 6h"
   }
 ]
