@@ -3,12 +3,12 @@ name: Deploy
 on:
   push: {}
   
-  workflow_run:
-    types:
-      - completed
-    branches: [main]
-    workflows: 
-    - Deploy scraping app
+#   workflow_run:
+#     types:
+#       - completed
+#     branches: [main]
+#     workflows: 
+#     - Deploy scraping app
 
 jobs:
   deploy:
